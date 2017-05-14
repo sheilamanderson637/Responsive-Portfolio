@@ -11,6 +11,8 @@ body {
 }
 
 /* general */
+@media screen and (max-width: 980px)
+ {
 
 .container {
   width: 100%;
@@ -243,27 +245,44 @@ input[type=submit] {
 {
   .main-section,
   .sidebar {
-    float:left;
+    float:none;
     text-align: left;
     width: 100%;
-    max-width: none;
-}
+  }
+ 
+  .main-section, 
+  .sidebar {
+      max-width: none;
+    }
 
   .work {
-      width: 300px;
+      float: none;
+      width: 270px;
+      margin: 20px 0 25px;
+      overflow: auto;
     }
 
   .work:nth-child(even) {
-      margin-right: 50px;
-      margin-left: 10px;
+      margin-right: 10px;
 }
 
   .work img {
-      width: 380px;
+      width: 50%;
+      border: 0 none;
+      opacity: 0.8;
 }
 
   .work h3 {
-      width: 380px;
+      bottom: 20px;
+      width: 200px;
+      padding: 15px;
+      margin-bottom: 0;
+      font-weight: 300;
+      line-height: 30px;
+      color: #fff;
+      text-align: center;
+      background: #4aaaa5;
+      border-bottom: 0;
 }
 
   #logo {
@@ -285,7 +304,6 @@ input[type=submit] {
   }
 
   #connect {
-    float:left;
     height: 125px;
   }
 
@@ -297,7 +315,7 @@ input[type=submit] {
   .main-section,
   nav,
   .sidebar {
-    float:left;
+    float:none;
     text-align: center;
     width: 100%;
   }
@@ -331,4 +349,4 @@ input[type=submit] {
   #connect {
     height: 125px;
   }
-}
+
